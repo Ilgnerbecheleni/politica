@@ -3,41 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidade</title>
+    <title>Política de Privacidade | Apoio ao Técnico</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #f9f9f9;
+        :root {
+            --primary-color: #2563eb;
+            --text-color: #1f2937;
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
         }
-        h1, h2 {
-            color: #333;
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            border-bottom: 2px solid var(--bg-color);
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            margin-top: 30px;
+        }
+
+        .date-info {
+            font-style: italic;
+            color: #6b7280;
+            margin-bottom: 30px;
+        }
+
+        p { margin-bottom: 15px; }
+
+        .contact-box {
+            background-color: #eff6ff;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+            margin-top: 40px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #9ca3af;
         }
     </style>
 </head>
 <body>
+
+<div class="container">
     <h1>Política de Privacidade</h1>
-    <p>Última atualização: [Data Atual]</p>
+    <p class="date-info">Última atualização: <span id="current-date"></span></p>
 
-    <h2>1. Introdução</h2>
-    <p>Bem-vindo ao Apoio ao Técnico . Respeitamos sua privacidade e estamos comprometidos em protegê-la. Esta política de privacidade explica como coletamos, usamos e protegemos suas informações.</p>
+    <section>
+        <h2>1. Introdução</h2>
+        <p>Bem-vindo ao <strong>Apoio ao Técnico</strong>. Valorizamos a sua privacidade e a transparência no tratamento dos seus dados. Esta política detalha como suas informações são coletadas e protegidas em conformidade com a LGPD (Lei Geral de Proteção de Dados).</p>
+    </section>
 
-    <h2>2. Coleta de Informações</h2>
-    <p>Nosso aplicativo pode coletar dados como nome, e-mail e informações de uso para melhorar a experiência do usuário. Nenhuma informação sensível será compartilhada sem consentimento.</p>
+    <section>
+        <h2>2. Coleta de Informações</h2>
+        <p>Coletamos informações básicas para o funcionamento do app, como:</p>
+        <ul>
+            <li>Dados de identificação (Nome e E-mail);</li>
+            <li>Logs de uso e performance;</li>
+            <li>Dados técnicos do dispositivo.</li>
+        </ul>
+    </section>
 
-    <h2>3. Uso das Informações</h2>
-    <p>As informações coletadas são utilizadas para personalizar os serviços e aprimorar a experiência do usuário. Não compartilhamos seus dados com terceiros, exceto quando necessário para o funcionamento do aplicativo.</p>
+    <section>
+        <h2>3. Uso das Informações</h2>
+        <p>Seus dados são utilizados exclusivamente para:</p>
+        <ul>
+            <li>Personalizar sua experiência técnica;</li>
+            <li>Enviar notificações críticas ou atualizações de suporte;</li>
+            <li>Melhorar as funcionalidades do aplicativo através de métricas anônimas.</li>
+        </ul>
+    </section>
 
-    <h2>4. Permissões do Dispositivo</h2>
-    <p>O aplicativo pode solicitar permissões para acessar câmera, localização ou armazenamento, sempre com a finalidade de melhorar a experiência do usuário.</p>
+    <section>
+        <h2>4. Permissões do Dispositivo</h2>
+        <p>Para o pleno funcionamento, o app pode solicitar acesso à <strong>câmera</strong> (leitura de QR codes ou registros técnicos), <strong>localização</strong> (para serviços regionais) e <strong>armazenamento</strong>. Você pode revogar essas permissões nas configurações do seu sistema a qualquer momento.</p>
+    </section>
 
-    <h2>5. Segurança</h2>
-    <p>Implementamos medidas de segurança para proteger suas informações contra acesso não autorizado, alteração ou divulgação.</p>
+    <section>
+        <h2>5. Segurança e Retenção</h2>
+        <p>Utilizamos protocolos de criptografia e servidores seguros para proteger seus dados. As informações são mantidas apenas pelo tempo necessário para cumprir as finalidades descritas nesta política.</p>
+    </section>
 
-    <h2>6. Contato</h2>
-    <p>Se você tiver dúvidas sobre nossa Política de Privacidade, entre em contato pelo e-mail: ilgner.ti@gmail.com</p>
+    <div class="contact-box">
+        <h2>6. Contato e Suporte</h2>
+        <p>Dúvidas sobre seus direitos ou sobre esta política? Entre em contato conosco:</p>
+        <p><strong>E-mail:</strong> <a href="mailto:ilgner.ti@gmail.com">ilgner.ti@gmail.com</a></p>
+    </div>
+</div>
+
+<footer>
+    &copy; <span id="year"></span> Apoio ao Técnico - Todos os direitos reservados.
+</footer>
+
+<script>
+    // Script para Data Automática
+    const dateElement = document.getElementById('current-date');
+    const yearElement = document.getElementById('year');
+    
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const today = new Date();
+
+    // Insere a data formatada (Ex: 1 de Fevereiro de 2026)
+    dateElement.textContent = today.toLocaleDateString('pt-BR', options);
+    
+    // Insere o ano no rodapé
+    yearElement.textContent = today.getFullYear();
+</script>
+
 </body>
 </html>
